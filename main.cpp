@@ -8,7 +8,19 @@
 
 using namespace std;
 
-Person::Person(string name=" ",int id=0) {
+
+
+
+Student::Student(int yearLevel = 0, string major = "NA") {
+	this->yearLevel = yearLevel;
+	this->major = major;
+}
+
+void Student::display() {
+	cout << "Year level: " << yearLevel << "Major: " << major;
+}
+
+Person::Person(string name = " ", int id = 0) {
 	this->name = name;
 	this->id = id;
 }
@@ -18,39 +30,34 @@ void Person::display() {
 	cout << "Name: " << name << "Id: " << id;
 }
 
-Student::Student(int yearLevel = 0, string major="NA") {
-	this->yearLevel = yearLevel;
-	this->major = major;
+Instructor::Instructor(string department=" ", int experienceYears=0) {
+	this->department = department;
+	this->experienceYears = experienceYears;
 }
 
-void Student::display() {
-	cout << "Year level: " << yearLevel << "Major: " << major;
+void Instructor::display() {
+	cout << "Department: " << department << "Experience Years: " << experienceYears;
+}
+
+Course:Course(string courseCode, string courseName, int maxStudents, Student* students, int currentStudents) {
+this->courseCode = courseCode;
+this->courseName = courseName;
+this->maxStudents = maxStudents;
+this->students = students;
+this->currentStudents = currentStudents;
+}
+
+Course:display() {
+cout << "Course: " << courseCode << " - " << courseName << "\n" << "Max Students: " << maxStudents<<"\n"<<"Currently Enrolled: ";
+for (int i = 0; i < maxStudents < i++) {
+	cout<<students->name<<" "<<"("<<"ID: "<<students->
+}
 }
 
 
-
-
-
-
-// ==================== Instructor Class Implementation ====================
-
-
-
-
-
-
-// ==================== Course Class Implementation ====================
-
-
-
-
-
-
-
-
-// ==================== Main Function ====================
 int main() {
-   
-    
-    return 0;
+
+
+	return 0;
 }
+
