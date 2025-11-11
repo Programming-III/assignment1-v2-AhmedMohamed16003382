@@ -11,7 +11,7 @@ private:
 	int yearLevel;
 	string major;
 public:
-	Student(int yearLevel, string major):Person();
+	Student(int yearLevel, string major):Person(name,id);
 	void display();
 };
 #endif
