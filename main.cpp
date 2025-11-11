@@ -11,7 +11,7 @@ using namespace std;
 
 
 
-Student::Student(int yearLevel = 0, string major = "NA") {
+Student::Student(int yearLevel = 0, string major = "NA"):Person(name,id) {
 	this->yearLevel = yearLevel;
 	this->major = major;
 }
