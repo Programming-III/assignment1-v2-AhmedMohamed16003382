@@ -57,6 +57,9 @@ int main() {
 Student* S1= new Student(3,"CS");
 Instructor* I1 = new Instructor("CS",6);
 Course* C1 = new Course("CS101","Programming",50,S1,30);
+C1->display();
+I1->display();
+S1->display();
 
 	return 0;
 }
