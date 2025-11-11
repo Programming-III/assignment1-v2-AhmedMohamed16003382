@@ -48,15 +48,15 @@ this->currentStudents = currentStudents;
 }
 
 Course:display() {
-cout << "Course: " << courseCode << " - " << courseName << "\n" << "Max Students: " << maxStudents<<"\n"<<"Currently Enrolled: ";
-for (int i = 0; i < maxStudents < i++) {
-	cout<<students->name<<" "<<"("<<"ID: "<<students->
-}
+cout << "Course: " << courseCode << " - " << courseName << "\n" << "Max Students: " << maxStudents<<"\n"<<;
+
 }
 
 
 int main() {
-
+Student* S1= new Student(3,"CS");
+Instructor* I1 = new Instructor("CS",6);
+Course* C1 = new Course("CS101","Programming",50,S1,30);
 
 	return 0;
 }
