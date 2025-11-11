@@ -17,7 +17,7 @@ Student::Student(int yearLevel = 0, string major = "NA") {
 }
 
 void Student::display() {
-	cout << "Year level: " << yearLevel << "Major: " << major;
+	cout << "Year level: " << yearLevel <<"\n"<<"Major: " << major;
 }
 
 Person::Person(string name = " ", int id = 0) {
@@ -27,7 +27,7 @@ Person::Person(string name = " ", int id = 0) {
 
 
 void Person::display() {
-	cout << "Name: " << name << "Id: " << id;
+	cout << "Name: " <<name << "Id: " << id;
 }
 
 Instructor::Instructor(string department=" ", int experienceYears=0) {
@@ -36,7 +36,7 @@ Instructor::Instructor(string department=" ", int experienceYears=0) {
 }
 
 void Instructor::display() {
-	cout << "Department: " << department << "Experience Years: " << experienceYears;
+	cout << "Department: " << department <<"\n"<<"Experience Years: " << experienceYears;
 }
 
 Course:Course(string courseCode, string courseName, int maxStudents, Student* students, int currentStudents) {
