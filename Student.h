@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class Student
+class Student:public Person
 {
 private:
 	int yearLevel;
