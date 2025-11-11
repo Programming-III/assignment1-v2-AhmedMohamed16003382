@@ -8,16 +8,24 @@
 
 using namespace std;
 
-// ==================== Person Class Implementation =========================
+Person::Person(string name=" ",int id=0) {
+	this->name = name;
+	this->id = id;
+}
 
 
+void Person::display() {
+	cout << "Name: " << name << "Id: " << id;
+}
 
+Student::Student(int yearLevel = 0, string major="NA") {
+	this->yearLevel = yearLevel;
+	this->major = major;
+}
 
-
-
-
-
-// ==================== Student Class Implementation ====================
+void Student::display() {
+	cout << "Year level: " << yearLevel << "Major: " << major;
+}
 
 
 
